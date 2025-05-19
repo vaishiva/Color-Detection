@@ -1,0 +1,24 @@
+import pandas as pd
+
+# Create a sample color database
+def create_color_csv():
+    data = [
+        {'name': 'Red', 'red': 255, 'green': 0, 'blue': 0},
+        {'name': 'Green', 'red': 0, 'green': 255, 'blue': 0},
+        {'name': 'Blue', 'red': 0, 'green': 0, 'blue': 255},
+        {'name': 'Black', 'red': 0, 'green': 0, 'blue': 0},
+        {'name': 'White', 'red': 255, 'green': 255, 'blue': 255},
+        {'name': 'Gray', 'red': 128, 'green': 128, 'blue': 128},
+        {'name': 'Yellow', 'red': 255, 'green': 255, 'blue': 0},
+        {'name': 'Cyan', 'red': 0, 'green': 255, 'blue': 255},
+        {'name': 'Magenta', 'red': 255, 'green': 0, 'blue': 255},
+        {'name': 'Orange', 'red': 255, 'green': 165, 'blue': 0},
+        {'name': 'Pink', 'red': 255, 'green': 192, 'blue': 203},
+        {'name': 'Brown', 'red': 165, 'green': 42, 'blue': 42},
+    ]
+    df = pd.DataFrame(data)
+    df.to_csv('colors.csv', index=False)
+    print("colors.csv created successfully.")
+
+# Call the function once to create the file
+create_color_csv()
