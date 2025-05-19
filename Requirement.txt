@@ -1,0 +1,17 @@
+Requirements
+Python 3.8+
+
+OpenCV (pip install opencv-python)
+
+Pandas (pip install pandas)
+
+Streamlit (pip install streamlit)
+
+Dataset
+The colors.csv file contains:
+
+16,000+ color names
+
+HEX and RGB values
+
+Sourced from X11, CSS, and Pantone libraries
